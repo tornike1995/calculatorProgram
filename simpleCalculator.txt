@@ -1,0 +1,64 @@
+//// Calculator with " if-else " ////
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HomeWork2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double FirstNumber, SecondNumber, Result;
+            char operatori;
+            Console.WriteLine("Shemoitanet pirveli ricxvi");
+            FirstNumber = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Shemoitanet ra moqmedebis shesruleba gsurt");
+            operatori = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("Shemoitanet meore ricxvi");
+            SecondNumber = Convert.ToDouble(Console.ReadLine());
+            if (operatori == '+')
+            {
+                Result = FirstNumber + SecondNumber;
+                Console.WriteLine("pasuxi aris: ");
+                Console.WriteLine(Result);
+            }
+            else if (operatori == '-')
+            {
+                Result = FirstNumber - SecondNumber;
+                Console.WriteLine("pasuxi aris: ");
+                Console.WriteLine(Result);
+            }
+            else if(operatori=='*')
+            {
+                Result = FirstNumber * SecondNumber;
+                Console.WriteLine("pasuxi aris: ");
+                Console.WriteLine(Result);
+            }
+            else if(operatori=='/')
+            {
+                Result = FirstNumber / SecondNumber;
+                Console.WriteLine("pasuxi aris: ");
+                Console.WriteLine(Result);
+            }
+            else
+            {
+                Console.WriteLine("Msgavsi operatori ar gvakvs");
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
